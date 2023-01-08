@@ -1,0 +1,74 @@
+:root {
+  --background-dark: #111111;
+  --background-lighter: #282828;
+  --font-color: white;
+  --highlight-color: #c36a7a;
+}
+
+body {
+  color: var(--font-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 1rem;
+}
+
+.light-background {
+  background-color: var(--background-lighter);
+}
+
+.dark-background {
+  background-color: var(--background-dark);
+}
+
+.info-card-container {
+  display: grid;
+  margin: auto;
+  max-width: 75rem;
+  align-self: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.large-cards {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.small-cards {
+  word-wrap: break-word;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.info-card {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.info-card h3 {
+  margin: 0;
+  color: var(--highlight-color);
+}
+
+.center-text {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.title {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.title > * {
+  margin: 1rem;
+}
+
+.title-image {
+  height: 12rem;
+  border-radius: 45%;
+}
