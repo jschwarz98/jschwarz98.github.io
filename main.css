@@ -1,75 +1,180 @@
 :root {
-  --background-dark: #111111;
-  --background-lighter: #282828;
-  --font-color: white;
-  --highlight-color: #c36a7a;
+  --text-color: #555555;
+  --highlight-color: #0e6ccf;
+  --fraction-width: 20rem;
 }
 
-body {
-  color: var(--font-color);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.no-margin {
   margin: 0;
-  padding: 0;
 }
 
-section {
-  padding: 1rem;
+.margin-bottom {
+  margin-bottom: 1rem;
 }
 
-.light-background {
-  background-color: var(--background-lighter);
-}
-
-.dark-background {
-  background-color: var(--background-dark);
-}
-
-.info-card-container {
-  display: grid;
-  margin: auto;
-  max-width: 75rem;
-  align-self: flex-start;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1rem;
-}
-
-.large-cards {
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-}
-
-.small-cards {
-  word-wrap: break-word;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-}
-
-.info-card {
+.pill {
   border-radius: 1rem;
-  padding: 1rem;
+  border-color: var(--highlight-color);
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.1rem 0.5rem;
 }
 
-.info-card h3 {
-  margin: 0;
+.highlighted {
   color: var(--highlight-color);
 }
 
-.center-text {
-  display: grid;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
+body {
+  color: var(--text-color);
+  background-color: #fefefe;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.title {
+.subgrid {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  gap: 1rem;
+}
+
+.main-content-grid {
+  display: grid;
+  margin: auto;
+  max-width: var(--fraction-width);
+  grid-template-columns: 1fr;
+}
+
+.ball {
+  position: relative;
+  top: 0.5rem;
+  left: -0.22rem;
+  width: 0.01rem;
+  border: var(--text-color) 0.3rem solid;
+  border-radius: 1rem;
+}
+.no-bullet {
+  list-style-type: none;
+}
+
+.small-padding-left {
+  padding-left: 0.5rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.border-left {
+  border-left: var(--text-color) 1px solid;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.center-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-image {
+  margin-left: auto;
+  margin-right: auto;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.center-horizontally {
+  display: flex;
   align-items: center;
 }
 
-.title > * {
-  margin: 1rem;
+.full-width {
+  width: 100%;
 }
 
-.title-image {
-  height: 12rem;
-  border-radius: 45%;
+@media (min-width: 44rem) {
+  .main-content-grid {
+    max-width: calc(1rem + 2 * var(--fraction-width));
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .profilbild-container {
+    grid-column: span 2;
+  }
+
+  .persoenliche-projekte-container {
+    grid-column: span 2;
+  }
+
+  .bildungsweg-container {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 66rem) {
+  .main-content-grid {
+    max-width: calc(3 * var(--fraction-width));
+    column-gap: 3rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .profilbild-container {
+    grid-column: span 3;
+  }
+
+  .profil-container {
+    grid-column: span 2;
+  }
+
+  .persoenliche-projekte-container {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .berufserfahrung-container {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .bildungsweg-container {
+    grid-column: 3;
+    grid-row: 3/ 5;
+  }
+}
+
+@media (min-width: 92rem) {
+  .main-content-grid {
+    max-width: calc(4 * var(--fraction-width));
+    column-gap: 4rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .profilbild-container {
+    grid-column: span 4;
+  }
+  .profil-container {
+    grid-column: span 2;
+  }
+
+  .persoenliche-projekte-container {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  .berufserfahrung-container {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .bildungsweg-container {
+    grid-column: 4;
+    grid-row: 3;
+  }
 }

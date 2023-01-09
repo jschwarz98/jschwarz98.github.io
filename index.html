@@ -1,138 +1,187 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="main.css" />
-    <script type="text/javascript" src="main.js" defer></script>
 
-    <link rel="icon" type="image/x-icon" href="resources/favicon.png" />
-    <title>CV - Jannik Schwarz</title>
+    <title>Temp</title>
   </head>
-  <body class="dark-background">
-    <section class="light-background">
-      <div class="title">
+  <body>
+    <div class="main-content-grid">
+      <div
+        class="profilbild-container center-content full-width"
+        style="text-align: center"
+      >
         <img
-          src="./resources/mugshot_squared.png"
-          class="title-image"
+          src="./resources/png/mugshot_squared.png"
+          class="profile-image"
           alt="Portrait von Jannik Schwarz"
           aria-label="Portrait von Jannik Schwarz"
         />
-        <h1>CV - Jannik Schwarz</h1>
+        <h1 class="no-margin">Jannik Schwarz</h1>
+        <h3 class="no-margin highlighted">Softwareentwickler</h3>
       </div>
-    </section>
-    <section class="dark-background">
-      <h1>Über mich</h1>
-      <div class="info-card-container">
-        <div class="info-card light-background">
-          <h3>Info 1</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium molestias velit vitae blanditiis autem ut adipisci,
-            sequi nihil repellat et hic, culpa natus asperiores. Est?
-          </p>
-        </div>
-        <div class="info-card light-background">
-          <h3>Info 2</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium molestias velit vitae blanditiis autem ut adipisci,
-            sequi nihil repellat et hic, culpa natus asperiores. Est?
-          </p>
-        </div>
-        <div class="info-card light-background">
-          <h3>Info 3</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium molestias velit vitae blanditiis autem ut adipisci,
-            sequi nihil repellat et hic, culpa natus asperiores. Est?
-          </p>
-        </div>
-        <div class="info-card light-background">
-          <h3>Info 4</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium molestias velit vitae blanditiis autem ut adipisci,
-            sequi nihil repellat et hic, culpa natus asperiores. Est?
-          </p>
+      <div class="profil-container center-content full-width">
+        <h2 class="no-margin">Über mich</h2>
+        <hr class="no-margin highlighted" />
+        <p class="blocksatz">
+          In der Schule bin ich das erste Mal mit dem Thema Programmierung in
+          Berührung gekommen. Seither hatte ich große Begeisterung Programme im
+          privaten Umfeld zu erstellen. Im Unterricht habe ich meistens die
+          Übungsaufgaben übersprungen und mich lieber eigenen, komplexeren
+          Projekten gewidmet. Mit dem dualen Studium wollte ich meine Kenntnisse
+          in der Informatik ausbauen, sowie fortgeschrittene Algorithmen und
+          Konzepte erlernen. Auch nach dem Studium suche ich weiterhin
+          Möglichkeiten mein Wissen zu erweitern. Bei meinem jetzigen
+          Arbeitgeber konnte ich bereits erste Eindrücke von der
+          Anwendungsentwicklung sammeln, möchte aber noch weitere Projekte
+          kennenlernen und mich weiterbilden.
+        </p>
+      </div>
+
+      <div class="berufserfahrung-container center-content full-width">
+        <h2 class="no-margin">Berufserfahrung</h2>
+        <hr class="no-margin highlighted" />
+        <div class="ball"></div>
+        <ul class="no-bullet no-margin small-padding-left border-left">
+          <li>
+            <span class="bold smaller">Oktober 2021 - heute</span>
+            <h3 class="no-margin highlighted">SOFTWAREENTWICKLER</h3>
+            <span class="no-margin bold">Komm.ONE</span>
+            <p>Stuttgart</p>
+            <p>
+              In der GUI-Entwicklung des Ausländerwesens. Erste Erfahrung in
+              Backend-Entwicklung
+            </p>
+            <h4 class="no-margin bold">Technologien</h4>
+            <ul>
+              <li>JSF</li>
+              <li>PrimeFaces</li>
+              <li>JPA</li>
+              <li>Liquibase</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bildungsweg-container center-content full-width">
+        <h2 class="no-margin">Bildungsweg</h2>
+        <hr class="no-margin highlighted" />
+        <div class="ball"></div>
+        <ul class="no-bullet no-margin small-padding-left border-left">
+          <li>
+            <span class="bold smaller">2021</span>
+            <h3 class="no-margin highlighted">
+              BACHELOR OF SCIENCE, Angewandte Informatik
+            </h3>
+            <span class="no-margin bold"
+              >Duale Hochschule Baden-Württemberg, Informatik
+            </span>
+            <p class="no-margin margin-bottom">Stuttgart</p>
+            <h4 class="no-margin bold">Projekte während des Studiums:</h4>
+            <ul>
+              <li>React-Native OCR-App als Studienarbeit</li>
+              <li>
+                Summer School / Hackathon in Italien, Lichtmesser /
+                Wettervorhersage
+              </li>
+              <li>
+                Modellierung und Simulation von Krankheitsverbreitung, etc. im
+                Bioinformatik-Wahlfach
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ball"></div>
+        <ul class="no-bullet no-margin small-padding-left border-left">
+          <li>
+            <span class="bold smaller">2018</span>
+            <h3 class="no-margin highlighted">
+              ALLGEMEINE HOCHSCHULREIFE / ABITUR
+            </h3>
+            <span class="no-margin bold">
+              Technisches Gymnasium, Fachrichtung Informatik
+            </span>
+            <p class="no-margin margin-bottom">Backnang</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="faehigkeiten-container center-content full-width">
+        <h2 class="no-margin">Fähigkeiten</h2>
+        <hr class="no-margin margin-bottom highlighted" />
+        <div class="subgrid">
+          <span class="pill">Teamfähigkeit</span>
+          <span class="pill">Kritikfähig</span>
+          <span class="pill">Aufgeschlossen</span>
+          <span class="pill">Geduldig</span>
+          <span class="pill">Fortgeschrittene Java-Kenntnisse</span>
+          <span class="pill">Python-Kenntnisse</span>
+          <span class="pill">Grundkenntnisse in HTML, CSS, JavaScript</span>
         </div>
       </div>
-    </section>
-    <section class="light-background">
-      <h1>Schulischer Werdegang</h1>
-      <div class="info-card-container large-card">
-        <div class="info-card dark-background">
-          <h3>Bachelor of Science, Angewandte Informatik</h3>
-          <h4>DHBW-Stuttgart, 2021</h4>
-          <span>Verschiedene Projekte im Studium:</span>
-          <ul>
-            <li>Studienarbeit - React-Native OCR-App</li>
-            <li>
-              Summer School / Hackathon in Italien, Lichtmesser /
-              Wettervorhersage
-            </li>
-            <li>
-              Modellierung und Simulation von Krankheitsverbreitung, etc. im
-              Bioinformatik-Wahlfach
-            </li>
-          </ul>
-        </div>
-        <div class="info-card large-card dark-background">
-          <h3>Allgemeine Hochschulreife / Abitur</h3>
-          <h4>Technisches Gymnasium, Fachrichtung Informatik, 2018</h4>
-        </div>
+
+      <div class="persoenliche-projekte-container center-content full-width">
+        <h2 class="no-margin">Persönliche Projekte</h2>
+        <hr class="no-margin highlighted" />
+        <p>
+          Aktuell bearbeite ich das Odin Projekt. Durch freies, selbständiges
+          Lernen werden darin die Kompetenzen eines Full-Stack-Entwicklers
+          vermittelt. Meine Projektroute hat mich mit Ruby in Kontakt gebracht,
+          worin ich aktuell meine Kenntnisse ausbaue.
+        </p>
       </div>
-    </section>
-    <section class="dark-background">
-      <h1>Schulischer Werdegang</h1>
-      <div class="info-card-container small-cards">
-        <div class="info-card center-text light-background">
-          <p>Teamfähigkeit</p>
-        </div>
-        <div class="info-card center-text light-background">
-          <p>Kritigfähig</p>
-        </div>
-        <div class="info-card center-text light-background">
-          <p>Aufgeschlossen</p>
-        </div>
-        <div class="info-card center-text light-background">
-          <p>Geduldig</p>
-        </div>
-        <div class="info-card center-text light-background">
-          <p>Fortgeschrittene Java-Kenntnisse</p>
-        </div>
-        <div class="info-card center-text light-background">
-          <p>Python-Kenntnisse</p>
-        </div>
-        <div class="info-card center-text light-background">
-          <p>Grundkenntnisse in HTML, CSS, JavaScript</p>
-        </div>
+
+      <div class="sprachen-container center-content full-width">
+        <h2 class="no-margin">Sprachen</h2>
+        <hr class="no-margin highlighted" />
+
+        <ul class="small-padding-left">
+          <li>Deutsch, Muttersprache</li>
+          <li>Englisch, Gute Kenntnisse</li>
+        </ul>
       </div>
-    </section>
-    <section class="light-background">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-        quaerat!
-      </p>
-    </section>
-    <section class="dark-background">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-        quaerat!
-      </p>
-    </section>
-    <section class="light-background">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-        quaerat!
-      </p>
-    </section>
-    <section class="dark-background">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-        quaerat!
-      </p>
-    </section>
+
+      <div class="kontaktdaten-container center-content full-width">
+        <h2 class="no-margin">Kontakt</h2>
+        <hr class="no-margin margin-bottom highlighted" />
+        <ul class="no-margin small-padding-left no-bullet">
+          <li>
+            <div class="center-horizontally">
+              <img src="resources/svg/linkdedin.svg" style="height: 2rem" />
+              <a
+                href="https://www.linkedin.com/in/jannik-schwarz-b23a34257/"
+                class="small-padding-left"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="center-horizontally">
+              <img src="resources/svg/email.svg" style="height: 2rem" />
+              <a
+                href="mailto: jannikschwarz@outlook.com"
+                class="small-padding-left"
+                >E-Mail</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="center-horizontally">
+              <img src="resources/svg/discord.svg" style="height: 2rem" />
+              <a
+                href="https://discord.com/users/383284127677284352"
+                class="small-padding-left"
+                >Discord</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
