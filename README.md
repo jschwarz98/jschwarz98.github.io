@@ -1,6 +1,6 @@
-# CV / Lebenslauf
+# [CV / Lebenslauf](https://jschwarz98.github.io/)
 
-Das Projekt soll eine simple Übersicht über mich darstellen und als Lebenslauf dienen.
+Das Projekt soll eine simple Übersicht über mich darstellen und als [Lebenslauf](https://jschwarz98.github.io/) dienen.
 
 ## Motivation
 
