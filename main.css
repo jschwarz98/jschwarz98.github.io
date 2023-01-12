@@ -30,11 +30,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.subgrid {
+.flex-wrap {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
   gap: 1rem;
 }
 
