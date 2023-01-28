@@ -26,8 +26,19 @@
 
 body {
   color: var(--text-color);
-  background-color: #fefefe;
+  padding: 0;
+  margin: 0.1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content-grid {
+  box-shadow: rgb(230, 230, 230) 0rem 0rem 1rem;
+
+  padding: 1rem;
+  display: grid;
+  margin: auto;
+  max-width: var(--fraction-width);
+  grid-template-columns: 1fr;
 }
 
 .flex-wrap {
@@ -35,13 +46,6 @@ body {
   flex-wrap: wrap;
   text-align: center;
   gap: 1rem;
-}
-
-.main-content-grid {
-  display: grid;
-  margin: auto;
-  max-width: var(--fraction-width);
-  grid-template-columns: 1fr;
 }
 
 .ball {

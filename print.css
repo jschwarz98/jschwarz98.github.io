@@ -1,0 +1,164 @@
+.no-margin {
+  margin: 0;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.pill + .pill {
+  padding-left: 0.75rem;
+  border-left: 2px solid black;
+}
+
+.highlighted {
+  color: revert;
+}
+@page {
+  size: A4; /* auto is the initial value */
+
+  /* this affects the margin in the printer settings */
+  margin: 25mm 25mm 25mm 25mm;
+}
+
+div {
+  margin-top: 1rem;
+  break-inside: avoid;
+}
+
+h2 {
+  text-decoration-line: underline;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content-grid {
+  display: table;
+  padding: 2rem;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 1rem;
+}
+
+.ball {
+  position: relative;
+  top: 0.5rem;
+  left: -0.22rem;
+  width: 0.01rem;
+  border: var(--text-color) 0.3rem solid;
+  border-radius: 1rem;
+}
+.no-bullet {
+  list-style-type: none;
+}
+
+.small-padding-left {
+  padding-left: 0.5rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.border-left {
+  border-left: var(--text-color) 1px solid;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.center-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-image {
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.center-horizontally {
+  display: flex;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+.profilbild-container {
+  grid-column: span 2;
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.profilbild-container h3 {
+  display: none;
+}
+
+.discord {
+  display: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.faehigkeiten-container {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.sprachen-container {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.persoenliche-projekte-container {
+  margin-top: 2rem;
+  grid-column: span 2;
+}
+
+.bildungsweg-container {
+  grid-column-start: 2;
+  grid-row: span 2;
+}
+.kontaktdaten-container {
+  grid-column: span 2;
+}
+
+.github a::after {
+  visibility: visible;
+  content: "unter: https://github.com/jschwarz98";
+}
+
+.linkedin a::after {
+  visibility: visible;
+  content: "unter: https://www.linkedin.com/in/jannik-schwarz-b23a34257/";
+}
+
+.email a::after {
+  visibility: visible;
+  content: "unter: jannikschwarz@outlook.com";
+}
